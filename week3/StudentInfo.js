@@ -2,7 +2,7 @@ const dateofBirth= "11/08/2005"
 
 const getStudentName= () =>
 {
-    return "Write Your Name here"
+    return "Bibek Gurau"
 }
 const getCampusName = () =>
 {
