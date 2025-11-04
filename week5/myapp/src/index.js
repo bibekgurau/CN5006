@@ -9,7 +9,7 @@ import AppColor from './AppbackgroundColor';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
- <React.StrictMode>
+  <GreetingElement/>
  <GreetingElementwithProp msg="Hi its Monday"/>
  <GreetingElementwithProp msg="Hi its Tuesday"/>
  <GreetingElementwithProp msg="Hi its Wednesday"/>
@@ -17,11 +17,9 @@ root.render(
  <GreetingElementwithProp msg="Hi its Friday"/>
  <GreetingElementwithProp msg="Hi its Saturday"/>
  <GreetingElementwithProp msg="Hi its Sunday"/>
- <AppColor heading="This is first element" lbl="Name :" color="green"/>
- <AppColor heading="This is second element" lbl="Name :" color="blue"/>
- <AppColor heading="This is third third element" lbl="Name :" color="Yellow"/>
-
- </React.StrictMode>
+ <AppColor heading="This is first element" lbl="Name :" color="red"/>
+ <AppColor heading="This is second element" lbl="Name :" color="pink"/>
+ <AppColor heading="This is third third element" lbl="Name :" color="blue"/>
   </React.StrictMode>
 );
 
