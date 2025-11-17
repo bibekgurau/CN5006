@@ -3,7 +3,7 @@ import Sunny from "./Sunny.png";
 import Rainy from "./Rainy.png";
 import Cloudy from "./Cloudy.png";
 
-function EmojeeCounter(props) {
+function WeatherWidget(props) {
   console.log("pic is", props.pic);
 
   const [pic, setPic] = useState(Sunny);
@@ -38,4 +38,4 @@ function EmojeeCounter(props) {
   );
 }
 
-export default EmojeeCounter;
+export default WeatherWidget;

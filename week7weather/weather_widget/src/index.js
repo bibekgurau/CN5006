@@ -3,17 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import WeatherWidget from './weathermoodwidget';
 import Hook_ControlledButtonState from './Counter';
-import EmojeeCounter from './EmojeeCounters'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <div class="container">
     <Hook_ControlledButtonState/>
-    <EmojeeCounter pic='Sunny'/>
-    <EmojeeCounter pic='Rainy'/>
-    <EmojeeCounter pic='Cloudy'/>
+    <WeatherWidget pic='Sunny'/>
+    <WeatherWidget pic='Rainy'/>
+    <WeatherWidget pic='Cloudy'/>
     </div>
   </React.StrictMode>
 );
