@@ -60,7 +60,7 @@ doc1
             console.error(err)
           })
  
-var givenage =15
+var givenage =25
 person_doc.find({Gender:"Female",age:{$gte:givenage}}) 
           //find all users
            .sort({Salary: 1})           //sort ascending by firstname
@@ -85,7 +85,7 @@ console.log("Total documents Count :", count)
 console.error(err)
 })
 
-person_doc.deleteMany({ age: { $gte: 15 } })
+person_doc.deleteMany({ age: { $gte: 25 } })
 .exec()
 .then(docs=>{
 console.log('deleted documents are:',docs);
