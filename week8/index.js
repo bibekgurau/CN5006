@@ -1,3 +1,4 @@
+//Task-1
 mongoose = require('mongoose');
 //app = express();
 const MONGO_URI = 'mongodb+srv://admin:admin@cluster0.rocz1jr.mongodb.net/week8';
@@ -30,10 +31,12 @@ doc1
  .catch((err) => {
  console.error(err);
  });
- manypersons=[{ name: 'Simon',age:42,Gender:"Male",Salary:3456 }
- ,{ name: 'Neesha',age:23,Gender:"Female",Salary:1000 }
- ,{ name: 'Mary',age:27,Gender:"Female",Salary:5402 },
- { name: 'Mike',age:40,Gender:"Male",Salary:4519 }
+ //Task-2 
+
+ manypersons=[{ name: 'Bibek',age:20,Gender:"Male",Salary:3456 }
+ ,{ name: 'Sudha',age:23,Gender:"Female",Salary:1000 }
+ ,{ name: 'Bindu',age:27,Gender:"Female",Salary:5402 },
+ { name: 'Anish',age:40,Gender:"Male",Salary:4519 }
  ]
 
 
@@ -42,6 +45,7 @@ doc1
  }).catch(function(error){
  console.log(error) // Failure
  });
+//Task-3
 
  //finding all the documents in the collection 
  person_doc.find({})                   //find all users
@@ -59,8 +63,9 @@ doc1
           .catch(err => {
             console.error(err)
           })
- 
-var givenage =25
+ //Task-4
+  
+var givenage =30
 person_doc.find({Gender:"Female",age:{$gte:givenage}}) 
           //find all users
            .sort({Salary: 1})           //sort ascending by firstname
@@ -76,7 +81,8 @@ person_doc.find({Gender:"Female",age:{$gte:givenage}})
           .catch(err => {
             console.error(err)
           })
-
+//Task-5
+  
 // counting all the documents
 person_doc.countDocuments().exec()
 .then(count=>{
@@ -84,7 +90,8 @@ console.log("Total documents Count :", count)
 }) .catch(err => {
 console.error(err)
 })
-
+//Task-6
+  
 person_doc.deleteMany({ age: { $gte: 25 } })
 .exec()
 .then(docs=>{
@@ -92,7 +99,8 @@ console.log('deleted documents are:',docs);
 }).catch(function(error){
 console.log(error);
 });
-
+//Task-7
+  
 person_doc.updateMany({ Gender: "Female" },{Salay:5555})
 .exec()
 .then(docs=>{
