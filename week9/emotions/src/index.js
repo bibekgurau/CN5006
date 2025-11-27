@@ -3,16 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import EmojeeCounter from './EmojeeCounters'
-import Hook_ControlledButtonState from './Counter'
+import FacebookEmojiCounter from './Facebookemoji'
+import ToggleMode from './ToggleModeComponent' 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Hook_ControlledButtonState/>
- <EmojeeCounter pic='Love'/>
- <EmojeeCounter pic='sad'/>
- <EmojeeCounter pic='Like'/>
+   <React.Fragment>
+ <FacebookEmojiCounter type= "Like"/>
+ < FacebookEmojiCounter type= "Love"/>
+ < FacebookEmojiCounter type= "happy"/>
+ < ToggleMode/>
+ </React.Fragment>
   </React.StrictMode>
 );
 

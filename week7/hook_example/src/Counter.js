@@ -12,7 +12,7 @@ function Hook_ControlledButtonState()
  return (
  <div className="App-header">
  <form>
-<h1>Click Counts are {count}</h1>
+    <h1>Click Counts are {count}</h1>
  <button type= "button" onClick={ClickHandle}>Click me{count} </button>
  </form>
  </div>
