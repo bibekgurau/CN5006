@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "install": "^0.13.0",
+    "mongo": "^0.1.0",
+    "mongoose": "^9.0.0",
+    "npm": "^11.6.4"
+  }
+}
